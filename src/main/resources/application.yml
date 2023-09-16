@@ -1,0 +1,8 @@
+server:
+  port: ${ADMIN_BACKEND_PORT:8080}
+spring:
+  datasource:
+    url: jdbc:postgresql://${DB_SERVER:localhost}:5432/solarwind
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
